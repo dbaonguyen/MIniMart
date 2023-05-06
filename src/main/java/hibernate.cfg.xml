@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+		"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+		"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+	<session-factory>
+		<property name="hibernate.connection.driver_class">oracle.jdbc.driver.OracleDriver</property>
+		<property name="hibernate.connection.password">123456</property>
+		<property name="hibernate.connection.url">jdbc:oracle:thin:@localhost:1523:orcl</property>
+		<property name="hibernate.connection.username">system</property>
+		<property name="hibernate.dialect">org.hibernate.dialect.Oracle12cDialect</property>
+		<property name="connection.pool_size">10</property>
+		<property name="current_session_context_class">thread</property>
+		<property name="show_sql">true</property>
+		<mapping class="entity.KhachHang" />
+		<mapping class="entity.PhanQuyen" />
+		<mapping class="entity.NhanVien" />
+		<mapping class="entity.DonViTinh"/>
+		<mapping class="entity.NhaCungCap" />
+		<mapping class="entity.ChungLoai"/>
+		<mapping class="entity.HangHoa"/>
+		<mapping class="entity.DiemThuong"/>
+		<mapping class="entity.ThanhToan"/>
+		<mapping class="entity.VanChuyen"/>
+		<mapping class="entity.HinhAnh"/>
+		<mapping class="entity.HoaDon"/>
+		<mapping class="entity.HoaDonChiTiet"/>
+		<mapping class="entity.CuaHang"/>
+	</session-factory>
+</hibernate-configuration>
